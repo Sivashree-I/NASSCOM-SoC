@@ -4,7 +4,7 @@
 Fig.1 Oracle Virtual Box Manager
 ![image](https://github.com/user-attachments/assets/86670c10-00ca-4688-8ac3-7918df065792)
 Fig.2 Ubuntu VM
-# Day 1
+# Day 1 - Systhesis
 - Introduction to open-source SoC design tools and ecosystem (OpenLane, OpenROAD, SkyWater, Efabless)
 - Overview of the OpenLane flow: RTL → synthesis → floorplanning → placement → routing → GDSII
 - Tool installation and setup instructions
@@ -20,5 +20,10 @@ Fig.4 RTL to GDS Flow
 Fig.5 OpenLANE ASIC Flow
 ![image](https://github.com/user-attachments/assets/07059687-6f7f-48eb-a8cb-ea1783a8208a)
 Fig.6 Opening OpenLANE
-![image](https://github.com/user-attachments/assets/483d7367-915d-43ee-af72-3eaa94cc4dfe)
+
 Fig.7 OpenLANE interactive flow
+
+Fig.8 Systhesis Results
+
+Fig.9 Synthesis resultant files exploration
+# Day 2 - Floorplanning
