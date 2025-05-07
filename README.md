@@ -11,6 +11,7 @@ Fig.2 Ubuntu VM
 - Exploring the OpenLane tool directory and configuration files
 - Running the interactive flow and preparing the design
 - Running synthesis and reviewing output files and reports
+  
 ![image](https://github.com/user-attachments/assets/cbc43c3c-7015-46e1-b502-9275cd8ce921)
 Fig.3 Open source EDA tools
 ![image](https://github.com/user-attachments/assets/22a2a7c0-5ea9-4da9-9d2d-ffa2affc595a)
