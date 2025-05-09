@@ -1,5 +1,6 @@
 # NASSCOM-SoC
 This is a record of work done in the Digital VLSI Design & SoC Planning course, 5-day workshop by VSD and NASSCOM.
+
 ![image](https://github.com/user-attachments/assets/fab2dc75-9195-43dd-b76a-751e12790aa5)
 # VM installation
 ![image](https://github.com/user-attachments/assets/da8fa522-23cc-4639-9d97-f2c231a486c5)
