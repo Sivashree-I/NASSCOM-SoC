@@ -1,4 +1,6 @@
 # NASSCOM-SoC
+This is a record of work done in the Digital VLSI Design & SoC Planning course, 5-day workshop by VSD and NASSCOM.
+![image](https://github.com/user-attachments/assets/fab2dc75-9195-43dd-b76a-751e12790aa5)
 # VM installation
 ![image](https://github.com/user-attachments/assets/da8fa522-23cc-4639-9d97-f2c231a486c5)
 Fig.1 Oracle Virtual Box Manager
@@ -42,7 +44,8 @@ Fig.9 Synthesis resultant files exploration
 
 Flop ratio = 1613/14876 = 0.10842968539930088733530518956709 = 10.84%
 
-# Day 2 - Floorplanning
+# Day 2 
+# Floorplanning
 ## Overview
 - Define the width and height of the core and die
 - Specify the location of preplaced cells
@@ -70,4 +73,4 @@ Fig.15 Floorplanning layout Zoomed in
 Fig.16 Exploring the Input metal (Horizontal)
 ![image](https://github.com/user-attachments/assets/a052703c-5a62-4396-96e1-a1b72b0ae7f5)
 Fig.16 Exploring the Input metal (Vertical)
-
+# Placement
