@@ -39,7 +39,7 @@ Fig.6 Opening OpenLANE
 ![image](https://github.com/user-attachments/assets/a6ded809-2361-4ba5-8a7e-ce16066646ae)
 Fig.7 OpenLANE directory
 ![image](https://github.com/user-attachments/assets/97a41d55-17a5-4a5f-9b6f-7f761d67f65e)
-Fig.8 Systhesis Results
+Fig.8 Synthesis Results
 ![image](https://github.com/user-attachments/assets/75a3120f-4422-41ad-9074-acd3fb21f4d6)
 Fig.9 Synthesis resultant files exploration
 
@@ -54,6 +54,7 @@ Flop ratio = 1613/14876 = 0.10842968539930088733530518956709 = 10.84%
 - Perform power planning (including power/ground rails and straps)
 - Assign pin placement along the die boundaries
 - Define logical cell placement blockages to control placement regions
+- Die area = (660685/1000)(671405/1000) = 443,587.212425 sq um
 ## Commands used
 - For running floorplan => run_floorplan
 - For opening in magic =>  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
@@ -75,3 +76,46 @@ Fig.16 Exploring the Input metal (Horizontal)
 ![image](https://github.com/user-attachments/assets/a052703c-5a62-4396-96e1-a1b72b0ae7f5)
 Fig.16 Exploring the Input metal (Vertical)
 # Placement
+## Overview
+- Bind the netlist to physical standard cells
+- Optimize placement to reduce wire length and manage capacitance
+- Insert repeaters to maintain signal integrity (with some area trade-off)
+- Manage capacitance effects to control signal slew and timing
+## Commandes used 
+- For running placement => run_placement
+- For opening in magic => magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+## Documentation
+
+# Library characterization and modelling
+![image](https://github.com/user-attachments/assets/53f2fae4-60e1-4f93-8140-70aa16edb1bd)
+- Cell Design flow
+  ![image](https://github.com/user-attachments/assets/faaab290-6464-44d0-82cf-0f0c47bb9265)
+  ## Characterization flow overview
+- Read the model file
+- Read the extracted SPICE netlist
+- Define buffer behavior and parameters
+- Read the buffer subcircuit
+- Load the necessary power supply setup
+- Attach stimulus to the characterization setup
+- Apply the required output capacitance
+- Run simulation commands (.trans, .dc)
+- Input parameters (1–8) into GUNA software (see figure below)
+- Generate timing, noise, and power characterization outputs
+![image](https://github.com/user-attachments/assets/d1f1b929-a4d5-480f-aeac-f3b0804d45e4)
+![image](https://github.com/user-attachments/assets/80cf522e-89dd-4b1c-afbf-562e4d237aff)
+  ## Timing introduction
+- Timing threshold definitions
+![image](https://github.com/user-attachments/assets/e39e5158-c2ae-4b6e-94f1-f609dd468399)
+## Timing characterization
+- Propagation delay
+![image](https://github.com/user-attachments/assets/7a66dd44-4352-4d19-b96b-6e862eb8918a)
+## Transition time
+![image](https://github.com/user-attachments/assets/2849db5a-3b90-4c86-a54f-36dccdf57e04)
+# Day 3
+## Standard Cell Design
+
+
+
+
+
+
