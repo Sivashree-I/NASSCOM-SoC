@@ -74,7 +74,7 @@ Fig.15 Floorplanning layout Zoomed in
 ![image](https://github.com/user-attachments/assets/2291fb7b-fc38-4188-8b7b-6fc7ef289ad8)
 Fig.16 Exploring the Input metal (Horizontal)
 ![image](https://github.com/user-attachments/assets/a052703c-5a62-4396-96e1-a1b72b0ae7f5)
-Fig.16 Exploring the Input metal (Vertical)
+Fig.17 Exploring the Input metal (Vertical)
 # Placement
 ## Overview
 - Bind the netlist to physical standard cells
@@ -113,9 +113,45 @@ Fig.16 Exploring the Input metal (Vertical)
 ![image](https://github.com/user-attachments/assets/2849db5a-3b90-4c86-a54f-36dccdf57e04)
 # Day 3
 ## Standard Cell Design
+### available at https://github.com/nickson-jose/vsdstdcelldesign
+- Study spice deck for cell
+- Study cell model files
+- Evalute size effect of PMOS and NMOS
+![image](https://github.com/user-attachments/assets/08895727-ceac-4cf1-9a48-eea9405077ea)
+![image](https://github.com/user-attachments/assets/8080949d-7851-4d15-9e51-9ab10d4844c8)
+![image](https://github.com/user-attachments/assets/948e28fd-ee4d-4dfc-a935-107b6d7a85bc)
+### Basics of the fabrication process
+#### 16 mask CMOS process
+- Selecting a substrate
+- N well and P well formation
+- Creating active region for transistors (mask1)
+- Gate Formation
+- Light doped drain (LDD) formation
+- Source and drain formation
+- Forming contacts and local interconnects
+- Higher level metal formation
+![image](https://github.com/user-attachments/assets/ec6a2b01-d20f-4188-9ff6-3191579cdfad)
+Fig.  Custom cel
+## Commandes used
+- git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+- cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+- magic -T sky130.tech sky130_inv.mag 
+- magic -T sky130A.tech sky130_inv.mag ngspice sky130_inv.spice
+## Extracting cell to use in design
+### Extract the custom inverter cell using ext2spice
+- Extract cell
 
+- study cell layout using magic & check drc (lab)
 
+- run ngspice simulation
 
-
-
-
+# Day 4
+## Lef file extraction
+- For PnR (Place and Route), only VDD, GND, input, and output information is needed
+- This information is provided in the LEF file (no logic details, helping protect IP)
+- Extract the LEF file and integrate it into the PicoRV32 flow
+- Input and output ports must be placed at intersections of vertical and horizontal power tracks
+- Standard cell dimensions: width should be an odd multiple of the horizontal track pitch, height should be an odd multiple of the vertical track pitch
+- In standard cell design, ports should align at the intersections of horizontal and vertical routing tracks
+- Typical track spacing: ~0.34 μm vertical, ~0.46 μm horizontal for each metal layer
+## Running the openlane flow with our custom cell
