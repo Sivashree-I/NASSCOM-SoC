@@ -85,7 +85,9 @@ Fig.17 Exploring the Input metal (Vertical)
 - For running placement => run_placement
 - For opening in magic => magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ## Documentation
-
+![image](https://github.com/user-attachments/assets/424277bc-cd93-4e62-8dc6-cd381b1606e8)
+![image](https://github.com/user-attachments/assets/dccecf85-3dcc-4139-a0ff-ba598bb0ff6c)
+![image](https://github.com/user-attachments/assets/3531c24d-83a1-4025-982d-91a1b45fbfd2)
 # Library characterization and modelling
 ![image](https://github.com/user-attachments/assets/53f2fae4-60e1-4f93-8140-70aa16edb1bd)
 - Cell Design flow
@@ -140,10 +142,9 @@ Fig.  Custom cel
 ## Extracting cell to use in design
 ### Extract the custom inverter cell using ext2spice
 - Extract cell
-
-- study cell layout using magic & check drc (lab)
-
+![image](https://github.com/user-attachments/assets/ff1cf367-803f-4ae9-b489-7ca5a8a63f25)
 - run ngspice simulation
+![image](https://github.com/user-attachments/assets/8d64b405-85f1-4888-b0fc-c39bed688009)
 
 # Day 4
 ## Lef file extraction
@@ -155,3 +156,5 @@ Fig.  Custom cel
 - In standard cell design, ports should align at the intersections of horizontal and vertical routing tracks
 - Typical track spacing: ~0.34 μm vertical, ~0.46 μm horizontal for each metal layer
 ## Running the openlane flow with our custom cell
+![image](https://github.com/user-attachments/assets/02d97e06-ce98-418b-bbe5-ed92d4ddd70f)
+![image](https://github.com/user-attachments/assets/74aad0f2-f3f9-4c0c-a313-18cfa8e97bf4)
